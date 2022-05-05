@@ -1,8 +1,8 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
+import Header from "./components/Header";
 
-function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
-}
+const App = () => {
+  return <Header>App</Header>;
+};
 
 export default App;
