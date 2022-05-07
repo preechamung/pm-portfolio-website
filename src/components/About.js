@@ -49,9 +49,7 @@ const About = () => {
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur. Excepteur sint occaecat cupidatat non proident
           </Content>
-          <LetTalkButton href="#contact">
-            Let's Talk
-          </LetTalkButton>
+          <LetTalkButton href="#contact">Let's Talk</LetTalkButton>
         </AboutContent>
       </AboutContainer>
     </section>
@@ -65,6 +63,8 @@ const AboutContainer = tw.div`
   grid-cols-[35%_50%]
   gap-[15%]
   container
+  lg:grid-cols-1
+  lg:gap-0
 `;
 
 const AboutMe = tw.div`
@@ -74,6 +74,10 @@ const AboutMe = tw.div`
   primary-lig
   grid
   place-items-center
+  lg:w-6/12
+  lg:m-[2rem_auto_4rem]
+  sm:w-[65%]
+  sm:m-[0_auto_3rem]
 `;
 
 const AboutMeImage = tw.div`
@@ -85,17 +89,22 @@ const AboutMeImage = tw.div`
 `;
 
 const AboutContent = tw.div`
+  lg:m-[1rem_0_1.5rem]
+  sm:text-center
 `;
 
 const Content = tw.p`
-  m-[2rem_0_2.6rem]
+  m-[2rem_0_1.5rem]
   text-light
+  sm:m-[1.5rem_0]
 `;
 
 const AboutCards = tw.div`
   grid
   grid-cols-3
   gap-6
+  sm:grid-cols-2
+  sm:gap-4
 `;
 
 const AboutCard = tw.article`
