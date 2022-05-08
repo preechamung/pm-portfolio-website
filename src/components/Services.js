@@ -148,7 +148,7 @@ const Services = () => {
 export default Services;
 
 const ServicesContainer = tw.div`
-    grid grid-cols-3 gap-12 container lg:grid-cols-2 lg:gap-4 sm:grid-cols-1 sm:gap-4
+    grid grid-cols-3 gap-12 container lg:grid-cols-2 lg:gap-8 sm:grid-cols-1 sm:gap-8
 `;
 
 const AboutTopic = tw.h5`
